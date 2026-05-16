@@ -1,5 +1,6 @@
 
 // import EditModal from "@/components/EditModal";
+import { DeleteAlert } from "@/components/DeleteAlert";
 import EditModal from "@/components/EditModal";
 import { Button } from "@heroui/react";
 import Image from "next/image";
@@ -22,7 +23,7 @@ console.log({destination});
       <div className="flex  items-center gap-3 justify-end mt-5 mb-3">
         {/* <Link href={`/destination/${id}/edit`}><button>Edit</button></Link> */}
         <EditModal destination={destination}></EditModal>
-   
+   <DeleteAlert destination={destination}></DeleteAlert>
       </div>
       <Image
         className="w-full h-100 object-cover"
